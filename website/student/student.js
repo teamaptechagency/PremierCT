@@ -1,13 +1,5 @@
-const links = document.querySelectorAll('.nav-link');
-const views = document.querySelectorAll('.view');
-const title = document.getElementById('page-title');
-const menu = document.getElementById('menu-toggle');
-links.forEach(link => link.addEventListener('click', () => {
-  const view = document.getElementById(link.dataset.view);
-  if (!view) return;
-  links.forEach(item => item.classList.remove('active'));
-  views.forEach(item => item.classList.remove('active'));
-  link.classList.add('active'); view.classList.add('active');
-  title.textContent = link.textContent.replace(/[0-9০-৯]/g, '').trim();
-  menu.checked = false; window.scrollTo({top: 0, behavior: 'smooth'});
-}));
+const links=document.querySelectorAll('.nav-link'),views=document.querySelectorAll('.view'),title=document.getElementById('page-title'),menu=document.getElementById('menu-toggle');
+links.forEach(link=>link.addEventListener('click',()=>{const view=document.getElementById(link.dataset.view);if(!view)return;links.forEach(x=>x.classList.remove('active'));views.forEach(x=>x.classList.remove('active'));link.classList.add('active');view.classList.add('active');title.textContent=link.childNodes[2]?.textContent?.trim()||link.textContent.trim();menu.checked=false;window.scrollTo({top:0,behavior:'smooth'});}));
+const tr=new Map([['ড্যাশবোর্ড','Dashboard'],['আমার কোর্স','My Courses'],['ক্লাস রুটিন','Class Routine'],['অ্যাসাইনমেন্ট','Assignments'],['ফলাফল ও অগ্রগতি','Results & Progress'],['ফ্রি ভিডিও','Free Videos'],['ক্লাস নোট','Class Notes'],['নোটিশ','Notices'],['ফি ও পেমেন্ট','Fees & Payments'],['প্রোফাইল','Profile'],['পরবর্তী ক্লাস','Next Class'],['বাকি অ্যাসাইনমেন্ট','Pending Assignments'],['সর্বশেষ ফলাফল','Latest Result'],['চলমান কোর্স','Ongoing Courses'],['আগামী ক্লাস','Upcoming Classes'],['সর্বশেষ নোটিশ','Latest Notices'],['মূল ওয়েবসাইট ↗','Main Website ↗'],['শুভ সকাল, Nusrat 👋','Good morning, Nusrat 👋'],['আজও শেখার পথে','Keep moving forward'],['এক ধাপ এগিয়ে যান','with your learning'],['ফি পরিশোধ করুন','Pay Fees'],['নতুন কোর্স দেখুন','Explore Courses']]),rev=new Map([...tr].map(([a,b])=>[b,a]));let lang='bn';
+function translate(map){const w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),nodes=[];while(w.nextNode())nodes.push(w.currentNode);nodes.forEach(n=>{const raw=n.nodeValue,c=raw.trim();if(map.has(c))n.nodeValue=raw.replace(c,map.get(c));});}
+document.getElementById('student-language-toggle')?.addEventListener('click',e=>{const en=lang==='bn';translate(en?tr:rev);lang=en?'en':'bn';document.documentElement.lang=lang;e.currentTarget.textContent=en?'বাংলা':'EN';});

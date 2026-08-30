@@ -1,0 +1,19 @@
+.transaction-modal {
+  position: fixed;
+  inset: 50% auto auto 50%;
+  width: min(620px, calc(100% - 28px));
+  max-height: calc(100dvh - 32px);
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  border: 0;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 560px) {
+  .transaction-modal {
+    width: calc(100% - 24px);
+    max-height: calc(100dvh - 24px);
+    border-radius: 16px;
+  }
+}

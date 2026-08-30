@@ -41,15 +41,23 @@
 }
 
 .transaction-form footer .modal-cancel {
-  min-width: 96px;
-  min-height: 42px;
-  border: 1px solid #cfd8d2;
+  min-width: 108px;
+  min-height: 44px;
+  padding: 0 18px;
+  border: 1px solid #bcc9c1;
   border-radius: 9px;
-  color: #52666b;
-  background: #fff;
-  font-size: 10px;
+  color: #314c53;
+  background: #f3f6f3;
+  font-size: 11px;
   font-weight: 800;
   cursor: pointer;
+}
+
+.transaction-form footer .modal-cancel::before {
+  content: "×";
+  margin-right: 7px;
+  font: 700 16px/1 Arial, sans-serif;
+  vertical-align: -1px;
 }
 
 .transaction-form footer .modal-cancel:hover {
@@ -60,7 +68,12 @@
 
 .transaction-form footer .primary-button {
   min-width: 132px;
-  min-height: 42px;
+  min-height: 44px;
+}
+
+.transaction-form > footer {
+  justify-content: space-between;
+  align-items: center;
 }
 
 .transaction-form button:focus-visible {
@@ -77,7 +90,8 @@
 
   .transaction-form footer {
     display: grid;
-    grid-template-columns: .8fr 1.2fr;
+    grid-template-columns: 1fr 1.25fr;
+    gap: 10px;
   }
 
   .transaction-form footer button {

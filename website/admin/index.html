@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>Premier Admin — Demo Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+Bengali:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+  <aside class="sidebar">
+    <div class="sidebar-head">
+      <a class="brand" href="../index.html"><span>P</span><div><strong>Premier</strong><small>Admin Portal</small></div></a>
+      <label for="sidebar-toggle" class="close-menu">×</label>
+    </div>
+    <nav class="side-nav" aria-label="Admin navigation">
+      <p>Overview</p>
+      <button class="nav-item active" data-view="dashboard"><i>⌂</i> ড্যাশবোর্ড</button>
+      <p>Academic management</p>
+      <button class="nav-item" data-view="courses"><i>▦</i> কোর্সসমূহ <b>4</b></button>
+      <button class="nav-item" data-view="batches"><i>◫</i> ব্যাচ ও ক্লাস</button>
+      <button class="nav-item" data-view="students"><i>♙</i> শিক্ষার্থী <b>500</b></button>
+      <button class="nav-item" data-view="videos"><i>▶</i> ফ্রি ভিডিও <b>6</b></button>
+      <p>Communication</p>
+      <button class="nav-item" data-view="enquiries"><i>✉</i> ভর্তি অনুসন্ধান <b class="alert">12</b></button>
+      <button class="nav-item" data-view="notices"><i>♢</i> নোটিশ</button>
+      <p>System</p>
+      <button class="nav-item" data-view="settings"><i>⚙</i> সেটিংস</button>
+    </nav>
+    <div class="admin-profile"><div class="avatar">AR</div><div><strong>Admin Rahim</strong><small>Super Admin</small></div><button>⋮</button></div>
+  </aside>
+  <label for="sidebar-toggle" class="sidebar-overlay"></label>
+
+  <main class="admin-main">
+    <header class="topbar">
+      <div class="topbar-left"><label for="sidebar-toggle" class="open-menu">☰</label><div><h1 id="page-title">ড্যাশবোর্ড</h1><p>রবিবার, ৩০ আগস্ট ২০২৬</p></div></div>
+      <div class="top-actions"><label class="search"><span>⌕</span><input type="search" placeholder="খুঁজুন..."></label><button class="icon-button" aria-label="Notifications">♢<b></b></button><a href="../index.html" target="_blank" class="view-site">ওয়েবসাইট দেখুন ↗</a></div>
+    </header>
+
+    <div class="workspace">
+      <section class="view active" id="dashboard">
+        <div class="welcome"><div><p>শুভ সকাল, Admin 👋</p><h2>আজকের কার্যক্রম এক নজরে</h2></div><button class="primary-button">+ নতুন ভর্তি</button></div>
+        <div class="stat-grid">
+          <article><div class="stat-icon green">♙</div><div><small>মোট শিক্ষার্থী</small><strong>৫২৪</strong><p class="positive">↗ ১২% এই মাসে</p></div></article>
+          <article><div class="stat-icon orange">▦</div><div><small>চলমান ব্যাচ</small><strong>১৮</strong><p>অনলাইন ৭ · অফলাইন ১১</p></div></article>
+          <article><div class="stat-icon blue">৳</div><div><small>মাসিক আদায়</small><strong>৳২.৪L</strong><p class="positive">↗ ৮.৪% বৃদ্ধি</p></div></article>
+          <article><div class="stat-icon purple">✉</div><div><small>নতুন অনুসন্ধান</small><strong>১২</strong><p class="warning">৫টি উত্তর বাকি</p></div></article>
+        </div>
+
+        <div class="dashboard-grid">
+          <section class="panel schedule-panel"><div class="panel-head"><div><h3>আজকের ক্লাস</h3><p>রবিবার, ৩০ আগস্ট</p></div><button>সব দেখুন →</button></div>
+            <div class="schedule-list">
+              <article><time>১০:০০<small>AM</small></time><span class="line green-line"></span><div><b>Microsoft Office — Batch 08</b><p>Lab 01 · ১৮ জন শিক্ষার্থী</p></div><em class="status offline">অফলাইন</em></article>
+              <article><time>১২:৩০<small>PM</small></time><span class="line blue-line"></span><div><b>IELTS Reading — Evening</b><p>Google Meet · ২৪ জন শিক্ষার্থী</p></div><em class="status online">অনলাইন</em></article>
+              <article><time>০৩:০০<small>PM</small></time><span class="line orange-line"></span><div><b>Class 9 — Physics</b><p>Room 03 · ১৫ জন শিক্ষার্থী</p></div><em class="status offline">অফলাইন</em></article>
+              <article><time>০৫:৩০<small>PM</small></time><span class="line purple-line"></span><div><b>Digital Marketing — Batch 04</b><p>Google Meet · ২০ জন শিক্ষার্থী</p></div><em class="status online">অনলাইন</em></article>
+            </div>
+          </section>
+
+          <section class="panel activity-panel"><div class="panel-head"><div><h3>সাম্প্রতিক কার্যক্রম</h3><p>সর্বশেষ আপডেট</p></div><button>•••</button></div>
+            <div class="activity-list"><article><span class="activity-avatar coral">NS</span><div><p><b>Nusrat Sultana</b> নতুন ভর্তি হয়েছে</p><small>Microsoft Office · ১২ মিনিট আগে</small></div></article><article><span class="activity-avatar green">৳</span><div><p>মাসিক ফি জমা হয়েছে</p><small>Rahim Uddin · ৳২,৫০০ · ৩০ মিনিট আগে</small></div></article><article><span class="activity-avatar gold">▶</span><div><p>নতুন ফ্রি ভিডিও প্রকাশিত</p><small>Excel Formula Basics · ১ ঘণ্টা আগে</small></div></article><article><span class="activity-avatar blue">A+</span><div><p>সাপ্তাহিক পরীক্ষার ফল প্রকাশিত</p><small>Class 10 Science · ২ ঘণ্টা আগে</small></div></article></div>
+          </section>
+        </div>
+
+        <section class="panel table-panel"><div class="panel-head"><div><h3>সাম্প্রতিক ভর্তি</h3><p>এই সপ্তাহে ২৪ জন নতুন শিক্ষার্থী</p></div><button>সকল শিক্ষার্থী →</button></div><div class="table-wrap"><table><thead><tr><th>শিক্ষার্থী</th><th>প্রোগ্রাম</th><th>ক্লাস মাধ্যম</th><th>ভর্তির তারিখ</th><th>অবস্থা</th><th></th></tr></thead><tbody><tr><td><span class="student"><i>NS</i><b>Nusrat Sultana<small>01712-345678</small></b></span></td><td>Microsoft Office</td><td><em class="status offline">অফলাইন</em></td><td>৩০ আগস্ট ২০২৬</td><td><span class="paid">● Active</span></td><td>•••</td></tr><tr><td><span class="student"><i>TA</i><b>Tanvir Ahmed<small>01813-987654</small></b></span></td><td>IELTS Preparation</td><td><em class="status online">অনলাইন</em></td><td>২৯ আগস্ট ২০২৬</td><td><span class="paid">● Active</span></td><td>•••</td></tr><tr><td><span class="student"><i>SR</i><b>Sadika Rahman<small>01914-112233</small></b></span></td><td>Class 10 Science</td><td><em class="status offline">অফলাইন</em></td><td>২৮ আগস্ট ২০২৬</td><td><span class="pending">● Pending</span></td><td>•••</td></tr></tbody></table></div></section>
+      </section>
+
+      <section class="view" id="courses"><div class="section-toolbar"><div><h2>কোর্স ব্যবস্থাপনা</h2><p>Public website-এ প্রদর্শিত কোর্সসমূহ</p></div><button class="primary-button">+ নতুন কোর্স</button></div><div class="management-grid"><article class="manage-card"><span class="card-label active-label">চলমান</span><div class="manage-icon">⌘</div><h3>Microsoft Office</h3><p>Word, Excel ও PowerPoint</p><footer><b>৮টি ব্যাচ</b><small>১২৪ শিক্ষার্থী</small></footer></article><article class="manage-card"><span class="card-label active-label">চলমান</span><div class="manage-icon coral">Ps</div><h3>Adobe Photoshop</h3><p>Graphic design fundamentals</p><footer><b>৩টি ব্যাচ</b><small>৪৮ শিক্ষার্থী</small></footer></article><article class="manage-card"><span class="card-label active-label">চলমান</span><div class="manage-icon gold">DM</div><h3>Digital Marketing</h3><p>Social media, SEO ও content</p><footer><b>৪টি ব্যাচ</b><small>৭২ শিক্ষার্থী</small></footer></article><article class="manage-card add-card"><span>+</span><h3>নতুন কোর্স যোগ করুন</h3></article></div></section>
+
+      <section class="view" id="batches"><div class="section-toolbar"><div><h2>ব্যাচ ও ক্লাস</h2><p>অনলাইন এবং অফলাইন ক্লাসের সময়সূচি</p></div><button class="primary-button">+ নতুন ব্যাচ</button></div><div class="empty-demo"><span>◫</span><h3>ব্যাচ ম্যানেজমেন্ট UI</h3><p>সময়সূচি, শিক্ষক, রুম/মিটিং লিংক এবং শিক্ষার্থী তালিকা এখানে পরিচালিত হবে।</p></div></section>
+      <section class="view" id="students"><div class="section-toolbar"><div><h2>শিক্ষার্থী তালিকা</h2><p>মোট ৫২৪ জন নিবন্ধিত শিক্ষার্থী</p></div><button class="primary-button">+ শিক্ষার্থী যোগ করুন</button></div><div class="empty-demo"><span>♙</span><h3>Student Management UI</h3><p>Profile, attendance, payment, results এবং guardian information-এর demo screen।</p></div></section>
+      <section class="view" id="videos"><div class="section-toolbar"><div><h2>ফ্রি ভিডিও পোর্টাল</h2><p>Public portal-এর ভিডিও content পরিচালনা</p></div><button class="primary-button">+ ভিডিও যোগ করুন</button></div><div class="empty-demo"><span>▶</span><h3>Video Library UI</h3><p>YouTube link, thumbnail, category, duration এবং publish status এখানে থাকবে।</p></div></section>
+      <section class="view" id="enquiries"><div class="section-toolbar"><div><h2>ভর্তি অনুসন্ধান</h2><p>Website contact form থেকে আসা demo request</p></div><button class="primary-button">Export CSV</button></div><div class="empty-demo"><span>✉</span><h3>Enquiry Inbox UI</h3><p>নাম, ফোন, পছন্দের প্রোগ্রাম, follow-up status এবং notes পরিচালনা করা যাবে।</p></div></section>
+      <section class="view" id="notices"><div class="section-toolbar"><div><h2>নোটিশ ও ঘোষণা</h2><p>শিক্ষার্থী এবং public website-এর announcement</p></div><button class="primary-button">+ নতুন নোটিশ</button></div><div class="empty-demo"><span>♢</span><h3>Notice Board UI</h3><p>নোটিশ তৈরি, schedule এবং audience নির্বাচন করার demo interface।</p></div></section>
+      <section class="view" id="settings"><div class="section-toolbar"><div><h2>সেটিংস</h2><p>প্রতিষ্ঠান ও website information</p></div><button class="primary-button">সংরক্ষণ করুন</button></div><div class="settings-card"><label>প্রতিষ্ঠানের নাম<input value="Premier Coaching & Training Center"></label><label>যোগাযোগ নম্বর<input value="+880 1000-000000"></label><label>ইমেইল<input value="hello@premiertraining.com"></label><label>ঠিকানা<textarea>আপনার প্রতিষ্ঠানের পূর্ণ ঠিকানা এখানে দিন</textarea></label></div></section>
+    </div>
+  </main>
+  <script src="admin.js"></script>
+</body>
+</html>

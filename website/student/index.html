@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+  <title>Premier Student Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+Bengali:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="student.css">
+</head>
+<body>
+  <input class="menu-toggle" type="checkbox" id="menu-toggle">
+  <aside class="sidebar">
+    <div class="logo"><span>P</span><div><strong>Premier</strong><small>Student Portal</small></div><label for="menu-toggle">×</label></div>
+    <div class="student-mini"><span>NS</span><div><strong>Nusrat Sultana</strong><small>ID: PCTC-2026-0524</small></div></div>
+    <nav>
+      <p>My learning</p>
+      <button class="nav-link active" data-view="dashboard"><i>⌂</i> ড্যাশবোর্ড</button>
+      <button class="nav-link" data-view="courses"><i>▦</i> আমার কোর্স <b>2</b></button>
+      <button class="nav-link" data-view="schedule"><i>□</i> ক্লাস রুটিন</button>
+      <button class="nav-link" data-view="assignments"><i>✓</i> অ্যাসাইনমেন্ট <b class="warn">3</b></button>
+      <button class="nav-link" data-view="results"><i>☆</i> ফলাফল ও অগ্রগতি</button>
+      <p>Resources</p>
+      <button class="nav-link" data-view="videos"><i>▶</i> ফ্রি ভিডিও</button>
+      <button class="nav-link" data-view="materials"><i>▤</i> ক্লাস নোট</button>
+      <button class="nav-link" data-view="notices"><i>♢</i> নোটিশ <b class="warn">2</b></button>
+      <p>Account</p>
+      <button class="nav-link" data-view="payments"><i>৳</i> ফি ও পেমেন্ট</button>
+      <button class="nav-link" data-view="profile"><i>♙</i> প্রোফাইল</button>
+    </nav>
+    <a class="help" href="../contact.html"><span>?</span><div><strong>সহায়তা দরকার?</strong><small>Support team-এর সঙ্গে কথা বলুন</small></div></a>
+  </aside>
+  <label class="overlay" for="menu-toggle"></label>
+
+  <main>
+    <header class="topbar"><div><label class="hamburger" for="menu-toggle">☰</label><div><h1 id="page-title">ড্যাশবোর্ড</h1><p>রবিবার, ৩০ আগস্ট ২০২৬</p></div></div><div class="top-actions"><button aria-label="Notifications">♢<b></b></button><a href="../index.html">মূল ওয়েবসাইট ↗</a><span>NS</span></div></header>
+    <div class="workspace">
+      <section class="view active" id="dashboard">
+        <div class="hero-card"><div><p>শুভ সকাল, Nusrat 👋</p><h2>আজও শেখার পথে<br><em>এক ধাপ এগিয়ে যান</em></h2><span>এই সপ্তাহে আপনি ৪টি ক্লাস সম্পন্ন করেছেন। দারুণ!</span></div><div class="weekly"><strong>75%</strong><small>Weekly goal</small></div></div>
+        <div class="quick-grid"><article><span class="qicon green">▶</span><div><small>পরবর্তী ক্লাস</small><strong>Microsoft Excel</strong><p>আজ, সকাল ১০:০০ · Lab 01</p></div><button>বিস্তারিত →</button></article><article><span class="qicon coral">✓</span><div><small>বাকি অ্যাসাইনমেন্ট</small><strong>৩টি কাজ</strong><p>পরবর্তী deadline: আগামীকাল</p></div><button>জমা দিন →</button></article><article><span class="qicon gold">☆</span><div><small>সর্বশেষ ফলাফল</small><strong>৮৭%</strong><p>IELTS Reading Mock Test</p></div><button>ফলাফল →</button></article></div>
+        <div class="main-grid">
+          <section class="panel"><header><div><h3>চলমান কোর্স</h3><p>আপনার শেখার অগ্রগতি</p></div><button>সব দেখুন →</button></header><div class="course-list"><article><div class="course-cover office"><span>⌘</span><small>কম্পিউটার</small></div><div class="course-data"><div><span>চলমান</span><small>১২টির মধ্যে ৮টি ক্লাস</small></div><h4>Microsoft Office Fundamentals</h4><p>Instructor: Md. Faruk Hossain</p><div class="progress"><i style="width:67%"></i></div><footer><b>67% সম্পন্ন</b><button>চালিয়ে যান →</button></footer></div></article><article><div class="course-cover ielts"><span>A</span><small>ইংরেজি</small></div><div class="course-data"><div><span>চলমান</span><small>১৬টির মধ্যে ৭টি ক্লাস</small></div><h4>IELTS Preparation</h4><p>Instructor: Sadia Rahman</p><div class="progress"><i style="width:44%"></i></div><footer><b>44% সম্পন্ন</b><button>চালিয়ে যান →</button></footer></div></article></div></section>
+          <aside class="panel calendar-panel"><header><div><h3>আগামী ক্লাস</h3><p>এই সপ্তাহের রুটিন</p></div><button>রুটিন →</button></header><div class="upcoming"><article><time><b>30</b><small>AUG</small></time><div><strong>Microsoft Excel</strong><p>10:00 AM · Lab 01</p></div><em>আজ</em></article><article><time><b>31</b><small>AUG</small></time><div><strong>IELTS Reading</strong><p>12:30 PM · Online</p></div><em class="later">কাল</em></article><article><time><b>02</b><small>SEP</small></time><div><strong>Excel Practice Lab</strong><p>10:00 AM · Lab 01</p></div></article><article><time><b>03</b><small>SEP</small></time><div><strong>IELTS Speaking</strong><p>12:30 PM · Online</p></div></article></div></aside>
+        </div>
+        <section class="panel notice-panel"><header><div><h3>সর্বশেষ নোটিশ</h3><p>গুরুত্বপূর্ণ আপডেট</p></div><button>সব নোটিশ →</button></header><div class="notices"><article><span>!</span><div><strong>আগামী বৃহস্পতিবার সকল অফলাইন ক্লাস বন্ধ থাকবে</strong><p>প্রশাসনিক কার্যক্রমের জন্য ৩ সেপ্টেম্বর ক্যাম্পাস বন্ধ থাকবে।</p></div><small>২ ঘণ্টা আগে</small></article><article><span class="info">i</span><div><strong>IELTS Mock Test-এর সময়সূচি প্রকাশিত</strong><p>৫ সেপ্টেম্বর সকাল ১০টায় পূর্ণাঙ্গ mock test অনুষ্ঠিত হবে।</p></div><small>গতকাল</small></article></div></section>
+      </section>
+
+      <section class="view" id="courses"><div class="view-head"><div><h2>আমার কোর্স</h2><p>Enrolled course এবং progress</p></div><button class="primary">নতুন কোর্স দেখুন</button></div><div class="demo-grid"><article><span>⌘</span><h3>Microsoft Office Fundamentals</h3><p>৬৭% সম্পন্ন · Offline batch 08</p></article><article><span>A</span><h3>IELTS Preparation</h3><p>৪৪% সম্পন্ন · Online evening batch</p></article></div></section>
+      <section class="view" id="schedule"><div class="view-head"><div><h2>ক্লাস রুটিন</h2><p>সাপ্তাহিক online ও offline class schedule</p></div><button class="primary">রুটিন ডাউনলোড</button></div><div class="placeholder"><span>□</span><h3>Weekly Schedule UI</h3><p>দিন, সময়, বিষয়, শিক্ষক, room এবং meeting link এখানে দেখা যাবে।</p></div></section>
+      <section class="view" id="assignments"><div class="view-head"><div><h2>অ্যাসাইনমেন্ট</h2><p>৩টি কাজ জমা দেওয়া বাকি</p></div></div><div class="placeholder"><span>✓</span><h3>Assignment Center</h3><p>প্রশ্ন, deadline, attachment, submission status এবং teacher feedback-এর demo UI।</p></div></section>
+      <section class="view" id="results"><div class="view-head"><div><h2>ফলাফল ও অগ্রগতি</h2><p>পরীক্ষা, attendance এবং course performance</p></div></div><div class="result-grid"><article><small>Average score</small><strong>87%</strong><p>গত মাসের তুলনায় +5%</p></article><article><small>Attendance</small><strong>94%</strong><p>৩২টির মধ্যে ৩০টি ক্লাস</p></article><article><small>Completed tasks</small><strong>18/21</strong><p>৩টি submission বাকি</p></article></div></section>
+      <section class="view" id="videos"><div class="view-head"><div><h2>ফ্রি ভিডিও</h2><p>Public learning portal-এর video lessons</p></div><a class="primary" href="../videos.html">ভিডিও পোর্টাল খুলুন ↗</a></div><div class="placeholder"><span>▶</span><h3>Free Video Library</h3><p>কম্পিউটার, বিজ্ঞান, ইংরেজি ও IELTS category অনুযায়ী ভিডিও দেখা যাবে।</p></div></section>
+      <section class="view" id="materials"><div class="view-head"><div><h2>ক্লাস নোট</h2><p>PDF, slide ও practice file</p></div></div><div class="placeholder"><span>▤</span><h3>Learning Materials</h3><p>Course ও class অনুযায়ী file list এবং download button-এর demo interface।</p></div></section>
+      <section class="view" id="notices"><div class="view-head"><div><h2>নোটিশ বোর্ড</h2><p>সকল academic ও administrative update</p></div></div><div class="placeholder"><span>♢</span><h3>Student Notice Board</h3><p>তারিখ, category, priority এবং attachmentসহ notice list এখানে থাকবে।</p></div></section>
+      <section class="view" id="payments"><div class="view-head"><div><h2>ফি ও পেমেন্ট</h2><p>Payment history এবং due information</p></div><button class="primary">ফি পরিশোধ করুন</button></div><div class="result-grid"><article><small>মোট কোর্স ফি</small><strong>৳18,000</strong><p>২টি চলমান কোর্স</p></article><article><small>পরিশোধিত</small><strong>৳13,500</strong><p>সর্বশেষ: ১০ আগস্ট</p></article><article><small>বকেয়া</small><strong>৳4,500</strong><p>Deadline: ১০ সেপ্টেম্বর</p></article></div></section>
+      <section class="view" id="profile"><div class="view-head"><div><h2>আমার প্রোফাইল</h2><p>ব্যক্তিগত ও guardian information</p></div><button class="primary">তথ্য আপডেট</button></div><div class="profile-card"><span>NS</span><div><h3>Nusrat Sultana</h3><p>Student ID: PCTC-2026-0524</p><dl><div><dt>মোবাইল</dt><dd>01712-345678</dd></div><div><dt>ইমেইল</dt><dd>nusrat@example.com</dd></div><div><dt>অভিভাবক</dt><dd>Md. Kamal Hossain</dd></div><div><dt>ভর্তির তারিখ</dt><dd>৩০ আগস্ট ২০২৬</dd></div></dl></div></div></section>
+    </div>
+  </main>
+  <script src="student.js"></script>
+</body>
+</html>
